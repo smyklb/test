@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<center>
+
+    <h2> Form Results </h2>
+
+<h2>Location</h2>
+<!--location -->
+{{ weather_list[0] }}
+</center>
+
+<h2>Timezone</h2>
+{{ weather_list[1] }}
+
+<h2>Timestamp</h2>
+{{ weather_list[2] }}
+
+
+<h2>Description</h2>
+{{ weather_list[4] }}
+
+<h2>Temperature in Celsius</h2>
+{{ weather_list[6] }}
+
+<h2>Wind Speed</h2>
+{{ weather_list[7] }}
+
+
+
+{% endblock %}

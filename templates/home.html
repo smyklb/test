@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<center>
+    <form action="/results" method="POST">
+    <h2>Select your City</h2>
+    <p>Enter your city name or </p>
+    <input name="city" type="text" placeholder="Enter your city">
+    <p>Or enter your latitude and longitude (Geocode this)</p>
+    <input name="lat" type="text" placeholder="Enter your latitude">
+    <input name="lon" type="text" placeholder="Enter your longitude">
+    <input type="submit">
+</form>
+
+</center>
+
+
+
+    {% endblock %}
